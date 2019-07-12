@@ -12,11 +12,11 @@ export class DataService {
   constructor( private http: HttpClient) { }
 
 
-  getEvents(day: string): Observable<Event[]> {
+  getEvents(day: string, location: string): Observable<Event[]> {
     return this.http.get<Event[]>(this.baseUrl + 'events.json')
       .pipe(
         map(events => {
-          const event = events.filter((e: Event) => e.date === day);
+          const event = events.filter((e: Event) => e.date === day && e.city === location);
           return event;
         }),
       );
