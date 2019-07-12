@@ -1,10 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-
-
 import { CityComponent } from './city.component';
 import { CityRoutingModule } from './city-routing.module';
+
+import { MatButtonModule } from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -14,9 +17,12 @@ import { CityRoutingModule } from './city-routing.module';
   imports: [
     CommonModule,
     CityRoutingModule,
-
+    MatButtonModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
   ],
   providers: [],
-  exports: [ ]
+  exports: [ CityComponent ]
 })
-export class EventsModule { }
+export class CityModule { }

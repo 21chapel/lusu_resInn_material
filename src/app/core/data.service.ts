@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-// import { Event } from '../../app/shared/interfaces';
+import { Event } from '../../app/shared/interfaces';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -12,13 +12,13 @@ export class DataService {
   constructor( private http: HttpClient) { }
 
 
-  getEvents(day: string, location: string): Observable<Event[]> {
+  getEvents(day: string): Observable<Event[]> {
     return this.http.get<Event[]>(this.baseUrl + 'events.json')
       .pipe(
-        // map(events => {
-        //   const event = events.filter((e: Event) => e.date === day && e.city === location);
-        //   return event;
-        // }),
+        map(events => {
+          const event = events.filter((e: Event) => e.date === day);
+          return event;
+        }),
       );
   }
 

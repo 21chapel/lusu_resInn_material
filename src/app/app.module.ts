@@ -4,28 +4,33 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EventsModule } from './events/events.module';
-import { CityComponent } from './city/city.component';
-import { CityRoutingModule } from './city/city-routing.module';
+import { CityModule } from './city/city.module';
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CityComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    EventsModule,
-    CityRoutingModule,
+
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    CoreModule
+
+    CoreModule,
+    EventsModule,
+    CityModule,
+    SharedModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

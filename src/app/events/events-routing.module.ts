@@ -5,7 +5,7 @@ import { EventDetailsComponent } from './event-details/event-details.component';
 
 const routes: Routes = [
   { path: 'events', pathMatch: 'full', component: EventsComponent },
-  { path: 'events/:id', pathMatch: 'full', component: EventDetailsComponent },
+  { path: 'events/:id', pathMatch: 'full', component: EventsComponent },
 ];
 
 @NgModule({
