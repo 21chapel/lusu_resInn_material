@@ -1,0 +1,24 @@
+h3 {
+  justify-content: center;
+  text-align: center;
+  border: 1px red solid;
+}
+
+.cont button {
+  margin: 8px auto;
+  justify-content: center;
+  width: 100px;
+  display: block;
+}
+
+.cont {
+  margin-top: 100px;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

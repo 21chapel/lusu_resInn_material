@@ -5,21 +5,27 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 
 
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EventsModule } from './events/events.module';
+import { CityComponent } from './city/city.component';
+import { CityRoutingModule } from './city/city-routing.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CityComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    EventsModule,
+    CityRoutingModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
