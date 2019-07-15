@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { DataService } from 'src/app/core/data.service';
 
 @Component({
   selector: 'app-event-details',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventDetailsComponent implements OnInit {
 
-  constructor() { }
+  event;
+
+  constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit() {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.dataService.getEvent(id).subscribe( e => {
+      this.event = e;
+      console.log(e);
+    });
   }
 
 }

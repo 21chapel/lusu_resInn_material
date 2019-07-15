@@ -1,7 +1,7 @@
 <h2>Monday</h2>
 
 <mat-list dense role="list" *ngFor="let m of monday">
-  <mat-list-item role="listitem">{{ m.name }} </mat-list-item>
+  <mat-list-item role="listitem" (click)="onSelect(m)">{{ m.name }} </mat-list-item>
   <mat-divider></mat-divider>
 </mat-list>
 
