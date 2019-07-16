@@ -5,3 +5,8 @@ export interface Event {
   description: string;
   date: any;
 }
+
+export interface Ev {
+  name: string;
+  day: number;
+}

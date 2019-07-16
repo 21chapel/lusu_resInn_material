@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
+import { Ev } from './shared/interfaces';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,12 @@ import { AngularFireDatabase } from '@angular/fire/database';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  courses: any[] = [];
+  events: Ev;
 
   constructor(private db: AngularFireDatabase) {
-    db.list('/courses').valueChanges().subscribe(courses => {
-      this.courses = courses;
-      console.log(courses);
+    db.list('/events').valueChanges().subscribe(e => {
+      this.events = e;
+      console.log(e);
     });
    }
 
