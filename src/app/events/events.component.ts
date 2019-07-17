@@ -22,6 +22,7 @@ export class EventsComponent implements OnInit {
     this.dataService.getEvents('Monday', this.city)
       .subscribe(e => {
         this.monday = e;
+        console.log(e);
       });
 
     this.dataService.getEvents('Tuesday', this.city)

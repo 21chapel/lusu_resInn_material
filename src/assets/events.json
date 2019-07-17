@@ -1,0 +1,42 @@
+[
+  {
+        "id": 1,
+        "speaker": "ted James",
+        "event": "Cloud Computing",
+        "city": "TB",
+        "description": "the clouds compute magic",
+        "date": "Monday",
+        "image": "http://www.howtoee.com/wp-content/uploads/2012/10/Guest-Speaker.jpg",
+        "avatar":""
+  },
+  {
+        "id": 2,
+        "speaker": "Michelle Thompson",
+        "event": "Artificial Intelligence",
+        "city": "TB",
+        "description": "AI is going to take over",
+        "date": "Monday",
+        "image": "http://www.howtoee.com/wp-content/uploads/2012/10/Guest-Speaker.jpg",
+        "avatar":""
+      },
+      {
+        "id": 3,
+        "speaker": "James Lebron",
+        "event": "Machine Learning",
+        "city": "TB",
+        "description": "Machine Learning is done with TensorFlow",
+        "date": "Monday",
+        "image": "http://www.howtoee.com/wp-content/uploads/2012/10/Guest-Speaker.jpg",
+        "avatar":""
+      },
+      {
+        "id": 4,
+        "speaker": "Tina Adams",
+        "event": "Cryptocurrency",
+        "city": "or",
+        "description": "what happened to bitcoin??",
+        "date": "Tuesday",
+        "image": "http://www.howtoee.com/wp-content/uploads/2012/10/Guest-Speaker.jpg",
+        "avatar":""
+  }
+]

@@ -10,11 +10,11 @@ import { Ev } from './shared/interfaces';
 export class AppComponent {
   events: Ev;
 
-  constructor(private db: AngularFireDatabase) {
-    db.list('/events').valueChanges().subscribe(e => {
-      this.events = e;
-      console.log(e);
-    });
-   }
+  // constructor(private db: AngularFireDatabase) {
+  //   db.list('/events').valueChanges().subscribe(e => {
+  //     this.events = e;
+  //     console.log(e);
+  //   });
+  //  }
 
 }

@@ -5,6 +5,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 
 import { EventsComponent } from './events.component';
@@ -21,7 +23,8 @@ import { EventsRoutingModule } from './events-routing.module';
     MatListModule,
     MatDividerModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [],
   exports: [ EventsComponent ]
